@@ -1,0 +1,11 @@
+[Unit]
+Description=AMD FX thermal control
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/amd-fx-thermal-cpu-control.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
